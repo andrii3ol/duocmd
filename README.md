@@ -105,6 +105,6 @@ Please [open an issue](https://github.com/andrii3ol/duocmd/issues/new?template=b
 
 ## License and terms
 
-**Proprietary freeware preview. © 2026 the DuoCmd author. All rights reserved.**
+**Proprietary freeware preview. © 2026 the DuoCmd author. All rights not expressly granted are reserved.**
 
-DuoCmd is free to download and use, but it is not open source. This repository contains documentation and release downloads only. By using a preview build you agree to the [Beta Terms of Use](TERMS.md).
+DuoCmd is free to download and use, and you may share the original, unmodified installer free of charge. It is not open source: the source code is closed and no open-source license is granted. This repository contains documentation and release downloads only. See the [Terms of Use](TERMS.md).
