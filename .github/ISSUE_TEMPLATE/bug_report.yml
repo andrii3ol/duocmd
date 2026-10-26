@@ -1,0 +1,91 @@
+name: Bug report
+description: Report a problem with a DuoCmd FREE Preview build
+title: "[Bug]: "
+labels: ["bug", "preview"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for testing DuoCmd. Please don't include private file names, paths or personal data in screenshots or logs.
+  - type: input
+    id: build
+    attributes:
+      label: DuoCmd version and build
+      description: Settings › Advanced › Version (for example 0.4.0-dev (build 127))
+      placeholder: 0.4.0-dev (127)
+    validations:
+      required: true
+  - type: input
+    id: macos
+    attributes:
+      label: macOS version
+      placeholder: macOS 15.3
+    validations:
+      required: true
+  - type: dropdown
+    id: mac
+    attributes:
+      label: Mac
+      options:
+        - Apple silicon
+        - Intel
+    validations:
+      required: true
+  - type: input
+    id: language
+    attributes:
+      label: App language and theme
+      placeholder: English, System theme
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Install / first launch
+        - Navigation, tabs, favorites
+        - Keyboard / function keys
+        - Copy, Move, Rename, New Folder, Trash
+        - Paste / drag and drop
+        - Batch Rename
+        - ZIP
+        - Viewer / Quick Look / search
+        - Settings / themes / language
+        - Accessibility
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. ...
+        2. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened instead?
+    validations:
+      required: true
+  - type: dropdown
+    id: data
+    attributes:
+      label: Were any files changed unexpectedly?
+      options:
+        - "No"
+        - "Yes (please describe above)"
+        - Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: extra
+    attributes:
+      label: Screenshots, crash report or other details
